@@ -2,10 +2,13 @@
 liff.shareTargetPicker(
       [
         {
-          'type': 'text',
-          'text': 'Hello, World!'
-        }
-      ]
+          type: "text",
+          text: "Hello, World!",
+        },
+      ],
+      {
+        isMultiple: true,
+      }
     )
     .then(function (res) {
       if (res) {
@@ -27,5 +30,4 @@ liff.shareTargetPicker(
       // something went wrong before sending a message
       console.log('something wrong happen')
     })
-}
 </script>
