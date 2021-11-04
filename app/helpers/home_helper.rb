@@ -113,10 +113,28 @@ module HomeHelper
   # 分享機器人
   def kamiflex_share_bot3
     Kamiflex.hash(self) do
-      alt_text "test alt text"
+      alt_text "Kamigo Demo 向您傳送了聯絡資訊"
       bubble do
-        body do
-          text "Hello, World!"
+        body paddingAll: "0px", margin: "0px" do
+          horizontal_box width: "100%", height: "200px" do
+            image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full, aspectRatio: "20:13"
+          end
+          horizontal_box do
+            text "Kamigo Demo", wrap: true, weight: :bold
+            url_button "分享此訊息", safe_liff_path(path: "/share_bot?message_name=kamiflex_share_bot3", liff_size: :compact), style: :primary, margin: :md
+          end
+          separator
+          text "這是展示 Kamigo LINE Bot 框架的 LINE Bot，歡迎試用。", wrap: true, size: :sm, margin: :lg
+          horizontal_box action: uri_action("https://line.me/R/ti/p/#{ENV["BOT_ID"]}"), 
+          borderColor: "#AAAAAA", borderWidth: :light, cornerRadius: :lg, margin: :xl do
+            horizontal_box paddingAll: "10px" do
+              horizontal_box cornerRadius: :xxl, width: "40px", height: "40px" do
+                image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full
+              end
+              text "Kamigo Demo", wrap: true, size: :lg, margin: :md, gravity: :center, weight: :bold, flex: 3
+              text ">", color: "#AAAAAA", wrap: true, size: :md, gravity: :center, align: :end
+            end
+          end
         end
       end
     end
