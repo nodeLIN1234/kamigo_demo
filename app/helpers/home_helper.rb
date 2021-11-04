@@ -115,7 +115,7 @@ module HomeHelper
     Kamiflex.hash(self) do
       alt_text "Kamigo Demo 向您傳送了聯絡資訊"
       bubble do
-        body do
+        body paddingAll: "0px" do
           horizontal_box width: "100%", height: "200px" do
             image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full, aspectRatio: "20:13"
           end
@@ -127,7 +127,7 @@ module HomeHelper
           text "這是展示 Kamigo LINE Bot 框架的 LINE Bot，歡迎試用。", wrap: true, size: :sm, margin: :lg
           horizontal_box action: uri_action("https://line.me/R/ti/p/#{ENV["BOT_ID"]}"), 
           borderColor: "#AAAAAA", borderWidth: :light, cornerRadius: :lg, margin: :xl do
-            horizontal_box paddingAll: "20px" do
+            horizontal_box paddingAll: "10px" do
               horizontal_box cornerRadius: :xxl, width: "40px", height: "40px" do
                 image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full
               end
