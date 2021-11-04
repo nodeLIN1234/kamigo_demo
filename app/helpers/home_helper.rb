@@ -117,12 +117,16 @@ module HomeHelper
       bubble do
         body do
           horizontal_box do
+            hero "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full, aspectRatio: "20:13"
+          end
+          horizontal_box do
             text "Kamigo Demo", wrap: true, weight: :bold
             url_button "分享此訊息", safe_liff_path(path: "/share_bot?message_name=kamiflex_share_bot3", liff_size: :compact), style: :primary, margin: :md
           end
           separator
           text "這是展示 Kamigo LINE Bot 框架的 LINE Bot，歡迎試用。", wrap: true, size: :sm, margin: :lg
-          horizontal_box action: uri_action("https://line.me/R/ti/p/#{ENV["BOT_ID"]}"), borderColor: "#AAAAAA", borderWidth: :light, cornerRadius: :lg, margin: :xl do
+          horizontal_box action: uri_action("https://line.me/R/ti/p/#{ENV["BOT_ID"]}"), 
+          borderColor: "#AAAAAA", borderWidth: :light, cornerRadius: :lg, margin: :xl do
             horizontal_box paddingAll: "10px" do
               horizontal_box cornerRadius: :xxl, width: "40px", height: "40px" do
                 image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full
