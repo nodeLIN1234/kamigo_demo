@@ -83,7 +83,7 @@ module HomeHelper
           separator
           text "這是展示 Kamigo LINE Bot 框架的 LINE Bot，歡迎試用。", wrap: true, size: :sm, margin: :lg
           horizontal_box action: uri_action("https://line.me/R/ti/p/#{ENV["BOT_ID"]}"), borderColor: "#AAAAAA", borderWidth: :light, cornerRadius: :lg, margin: :xl do
-            horizontal_box paddingAll: "10px" do
+            horizontal_box paddingAll: "20px" do
               horizontal_box cornerRadius: :xxl, width: "40px", height: "40px" do
                 image "https://#{request.host}/images/kamigo.png", size: :full
               end
