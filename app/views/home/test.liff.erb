@@ -2,10 +2,52 @@
 liff.shareTargetPicker(
       [
         {
-          "type": "image",
-          "originalContentUrl": "https://desonews.files.wordpress.com/2019/05/d6ykufuu0aamzdk.jpg?w=720",
-          "previewImageUrl": "https://desonews.files.wordpress.com/2019/05/d6ykufuu0aamzdk.jpg?w=720"
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Header text"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Body text"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Footer text"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://www.google.com/search?q=%E5%A5%B3%E5%84%AA&tbm=isch&ved=2ahUKEwjopZyZ7_3zAhUFbJQKHdnJChYQ2-cCegQIABAA&oq=%E5%A5%B3%E5%84%AA&gs_lcp=CgNpbWcQAzoHCCMQ7wMQJzoICAAQgAQQsQM6BQgAEIAEOgQIABADOgsIABCABBCxAxCDAToKCCMQ7wMQ6gIQJzoECAAQGFCtIVimOWCRPmgDcAB4AIABf4gB4weSAQM1LjWYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=SGGDYejhCIXY0QTZk6uwAQ&bih=757&biw=1600#imgrc=kQa9lddT3pYkVM"
         },
+        "style": "primary"
+      }
+    ]
+  }
+},
       ],
       {
         isMultiple: true,
