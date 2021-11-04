@@ -136,7 +136,7 @@ module HomeHelper
             end
           end
         end
-      end
+      end,
       bubble do
         body paddingAll: "0px", margin: "0px" do
           horizontal_box width: "100%", height: "200px" do
