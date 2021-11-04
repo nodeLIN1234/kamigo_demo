@@ -115,7 +115,7 @@ module HomeHelper
     Kamiflex.hash(self) do
       alt_text "Kamigo Demo 向您傳送了聯絡資訊"
       bubble do
-        body paddingAll: "0px" do
+        body paddingAll: "0px", margin: "0px" do
           horizontal_box width: "100%", height: "200px" do
             image "https://tw.appledaily.com/resizer/fEE1TNf6TiKnMdqqLQlzC7KA5AM=/535x301/filters:quality(100)/cloudfront-ap-northeast-1.images.arcpublishing.com/appledaily/OWLTPDXZM5DEBPQ4RAP5TH3PCI.jpg", size: :full, aspectRatio: "20:13"
           end
